@@ -1,0 +1,32 @@
+a = {}
+
+
+
+
+
+word = input("INPUT WORD TO TRANSLATE:")
+if word in a:
+  for i,j in a.items():
+    if word == i:
+      print(j)
+else:
+  b = word[1:] + word[0] + "ay"
+  a[word] = b
+  print(b)
+print(a)
+
+
+b = {}
+
+
+
+word = input("INPUT WORD TO TRANSLATE:")
+if word in b:
+  for i,j in b.items():
+    if word == i:
+      print(j)
+else:
+  a = word[-3] + word[:-3]
+  b[word] = a
+  print(a)
+print(b)
